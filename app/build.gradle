@@ -1,0 +1,17 @@
+dependencies {
+    // Kotlin & Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
+
+    // Room Database
+    implementation "androidx.room:room-runtime:2.6.1"
+    implementation "androidx.room:room-ktx:2.6.1"
+    ksp "androidx.room:room-compiler:2.6.1" // 需配置 KSP 插件
+
+    // UI & Navigation
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2"
+    implementation "androidx.activity:activity-ktx:1.8.0"
+
+    // Networking & Serialization (LLM 通信)
+    implementation "com.squareup.okhttp3:okhttp:4.12.0"
+    implementation "com.google.code.gson:gson:2.10.1"
+}

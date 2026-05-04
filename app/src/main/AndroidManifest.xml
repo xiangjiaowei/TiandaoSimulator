@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 允许本地网络通信 (访问本地推理服务器) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".TiandaoApplication"
+        android:allowBackup="true"
+        android:theme="@style/Theme.TiandaoSimulator"
+        android:usesCleartextTraffic="true"> <!-- 必须开启，否则无法请求本地 HTTP 接口 -->
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
